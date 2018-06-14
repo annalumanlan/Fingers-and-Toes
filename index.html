@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Fingers and Toes</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="build/stylesheet/index.css">
+</head>
+
+<body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3> Input a number:</h3>
+        <input class="inputNum" type="number" id="inputNumber" required> <br>
+        <input class="grid-item__button" type="button" value="COUNT" onclick="countNum()">
+        <input class="grid-item__button" type="button" value="RESTART" onclick="restartCounter()">
+        <input class="grid-item__button" type="button" value="RESET" onclick="resetCounter()">
+      </div>
+      <div class="grid-item">
+        <h1>COUNTER <span id="counter">0</span></h1>
+        <p class="grid-item__highlight" id="three">FINGERS
+          <p>
+            <p class="grid-item__highlight" id="five">TOES</p>
+      </div>
+    </div>
+  <!-- Scripts -->
+  <script src="source/scripts/index.js"></script>
+</body>
+
+</html>
