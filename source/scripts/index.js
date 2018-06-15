@@ -52,12 +52,13 @@ const stopCounter = () => {
 
 //highlights divisible by five
 const divisibleByFive = () => {
-  document.getElementById("five").style.backgroundColor = "lightblue";
+  document.getElementById("five").style.backgroundColor = "#70ABAF";
 };
 
 //highlights divisible by three
 const divisibleByThree = () => {
-  document.getElementById("three").style.backgroundColor = "lightblue";
+  document.getElementById("three").style.backgroundColor = "#70ABAF";
+  document.getElementById("three").style.transition = "ease-out .3s";
 };
 
 //restarts the counter to zero
@@ -76,6 +77,6 @@ const resetCounter = () => {
 
 //default color
 const defaultColor = () => {
-  document.getElementById("three").style.backgroundColor = "#ba243d";
-  document.getElementById("five").style.backgroundColor = "#ba243d";
+  document.getElementById("three").style.backgroundColor = "#32292F";
+  document.getElementById("five").style.backgroundColor = "#32292F";
 };

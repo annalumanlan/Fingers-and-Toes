@@ -5,28 +5,34 @@
 
   <!--  Meta  -->
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fingers and Toes</title>
 
   <!--  Styles  -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="build/stylesheet/index.css">
 </head>
 
 <body>
-    <div class="grid-container">
-      <div class="grid-item">
-        <h3> Input a number:</h3>
-        <input class="inputNum" type="number" id="inputNumber" required> <br>
-        <input class="grid-item__button" type="button" value="COUNT" onclick="countNum()">
-        <input class="grid-item__button" type="button" value="RESTART" onclick="restartCounter()">
-        <input class="grid-item__button" type="button" value="RESET" onclick="resetCounter()">
+  <div class="grid-container">
+    <div class="grid-item__block">
+      <div class="grid-item__fingers" id="three">
+        <p class="grid-item__highlight">FINGERS</p>
       </div>
-      <div class="grid-item">
-        <h1>COUNTER <span id="counter">0</span></h1>
-        <p class="grid-item__highlight" id="three">FINGERS
-          <p>
-            <p class="grid-item__highlight" id="five">TOES</p>
+      <div class="grid-item__toes" id="five">
+        <p class="grid-item__highlight">TOES</p>
       </div>
     </div>
+
+    <div class="grid-item__counter">
+      <h1 id="counter">0</h1>
+      <h3> Input a Number:</h3>
+      <input class="inputNum" type="number" id="inputNumber" required> <br>
+      <input class="grid-item__button" type="button" value="COUNT" onclick="countNum()">
+      <input class="grid-item__button" type="button" value="RESTART" onclick="restartCounter()">
+      <input class="grid-item__button" type="button" value="RESET" onclick="resetCounter()">
+    </div>
+  </div>
   <!-- Scripts -->
   <script src="source/scripts/index.js"></script>
 </body>
